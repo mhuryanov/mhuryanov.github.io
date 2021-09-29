@@ -1990,10 +1990,12 @@ h3.slide-title {
 	}
 
 	.contacts {
-		margin-top: 4.25rem;
+		color: #f79784;
+		margin-top: 0;
 	}
 
 	.contact-item {
+		color: #f79784;
 		margin-top: 2.5rem;
 	}
 }
