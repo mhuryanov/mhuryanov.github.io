@@ -358,59 +358,6 @@ var DECENTTHEMES = DECENTTHEMES || {};
 
         },
 
-        gmap3: function() {
-
-            function isMobile() {
-                return ('ontouchstart' in document.documentElement);
-            }
-
-            function gmap3Prepare(attr, lat, lng, img) {
-                if (typeof google === 'undefined') return;
-                var options = {
-                    center: [lat, lng],
-                    zoom: 15,
-                    mapTypeControl: true,
-                    mapTypeControlOptions: {
-                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                    },
-                    navigationControl: true,
-                    scrollwheel: false,
-                    streetViewControl: true
-                }
-
-                if (isMobile()) {
-                    options.draggable = false;
-                }
-
-                $(attr).gmap3({
-                    map: {
-                        options: options
-                    },
-                    marker: {
-                        latLng: [lat, lng],
-                        options: { icon: img }
-                    }
-                });
-            }
-            // Create The Map
-            $('.gmap3-area').each(function() {
-                var lat = $(this).data('lat');
-                var lng = $(this).data('lng');
-                var img = $(this).data('img');
-                var i = $(this);
-                gmap3Prepare(i, lat, lng, img);
-            });
-
-            $('[data-area="map"]').each(function() {
-                var mapCotainer = $(this).find('.gmap3-section');
-                var mapToggle = $(this).find('[data-toogle="map"]');
-
-                $(mapToggle).click(function() {
-                    $(mapCotainer).toggleClass('full');
-                });
-            });
-
-        },
         parallaxBGImg: function() {
 
             // Make Parallax Image Background
