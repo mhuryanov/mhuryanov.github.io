@@ -18,7 +18,6 @@ var DECENTTHEMES = DECENTTHEMES || {};
             DECENTTHEMES.initialize.swiperInit();
             DECENTTHEMES.initialize.countUp();
             DECENTTHEMES.initialize.isotopeInit();
-            DECENTTHEMES.initialize.gmap3();
             DECENTTHEMES.initialize.parallaxBGImg();
             DECENTTHEMES.initialize.parallaxBGVdo();
             DECENTTHEMES.initialize.navigationBar();
