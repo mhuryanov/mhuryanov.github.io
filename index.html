@@ -1,1003 +1,1254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
-  <meta name="author" content="Maxim Huryanov">
-  <meta name="language" content="english">
-  <meta name="distribution" content="global">
-  <meta name="description" content="With over 7 years of experience in frontend and backend development, I have held various positions as a freelancer, managing partner, and employee. I specialize in clean, modern, visually appealing frontend and backend development, but my core focuses are also usability and functionality. All my works are in step with modern technology. My fields of expertise: * Frontend web development - Angular, React, Vue * Backend web development - Python, Node express, * Fullstack web development - MERN, MEAN, Vue+Laravel, Django + React I worked with numerous clients from all around the world from early startups to well-established companies. I always seek new opportunities for cooperation on projects around interesting dashboards or landing pages.">
+    <!--=====  Meta Data  ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maxim Huryanov</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 
-  <meta name="twitter:widgets:csp" content="on">
-  <meta name="keywords" content="Maxim Huryanov, Full-stack developer, Web developer, Front-end developer, Back-end developer, Senior Developer">
-  <meta name="robots" content="index, follow">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://mir-s3-cdn-cf.behance.net/user/276/38a2ed197751519.606ad52ee0d55.jpg">
-  <meta property="og:image" content="https://mir-s3-cdn-cf.behance.net/user/276/38a2ed197751519.606ad52ee0d55.jpg">
-  <meta property="og:site_name" content="Maxim Huryanov">
-  <meta property="og:title" content="Maxim Huryanov">
-  <meta name="google-site-verification" content="LzkNOgZrL2Hihgif603MLi-T-XNKLwIivrKnU3en_dE" />
+    <!--=====  Vendors Styles  ======-->
+    <link rel="stylesheet" href="vendor/loaders.css/loaders.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/swiper/css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/formstone/css/lightbox.css" type="text/css">
+    <link rel="stylesheet" href="vendor/formstone/css/background.css" type="text/css">
+    <link rel="stylesheet" href="vendor/mediaelement/mediaelementplayer.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/text-animation-css/css/index.css" type="text/css">
 
-  <title>Maxim Huryanov</title>
+    <!--=====  App Styles  ======-->
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+    <link rel="stylesheet" id="kingma-colors" href="assets/css/colors/red.css" type="text/css">
 
-  <!-- CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/jquery.pagepiling.css" rel="stylesheet">
-  <link href="css/owl.carousel.min.css" rel="stylesheet">
-  <link href="css/owl.theme.default.min.css" rel="stylesheet">
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.ico">
+    <!--=====  Google Web Fonts  ======-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic%7cOpen+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
-  <!-- Main CSS -->
-  <link href="css/style.css" rel="stylesheet">
 
+    <style>
+        /* Preloader */
+        
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: #0f161e;
+            z-index: 9999;
+        }
+        
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+    <script src="vendor/modernizr/js/index.js"></script>
 </head>
 
-<body class="body-piling is-dark">
-  <div class="wrapper">
-    <header id="header" class="header">
-      <div class="container-fluid">
-        <div class="brand">
-          <a href="#About" class="brand-name" style=""><img src="img/maxim.png" style="width: 45px;vertical-align: unset;margin-left: 12px;"></a>
-          <a href="Maxim.pdf" download="Maxim.pdf" class="btn btn-dark" style="position: absolute; left: 100px; top: -8px;">Resume</a>
+<body class="default" data-spy="scroll" data-target="#top-menu">
+
+    <div id="preloader">
+        <div id="loader">
+            <div class="loader-inner line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
+        <!-- /#loader -->
+    </div>
+    <!-- /#preloader -->
+    <div id="page-outer">
 
-        <button class="nav-toggle-btn a-nav-toggle">
-          <span class="hamburger">
-            <span class="top-bun"></span>
-            <span class="meat"></span>
-            <span class="bottom-bun"></span>
-          </span>
-        </button>
 
-        <div class="hide-menu a-nav-toggle"></div>
+        <!--==============================
+	=            Header            =
+	==============================-->
+        <header id="header" class="site-header">
+            <div class="container-fluid">
 
-        <div class="menu">
-          <div class="menu-lang">
-            <a href="#" class="menu-lang-item active">Eng.</a>
-          </div>
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="KingMa">
+                        <img class="transparent-logo" src="assets/img/logo-transparent.png" alt="KingMa">
+                    </a>
+                    <!-- <a href="index.html">
+				KingMa
+			</a> -->
+                </div>
+                <!-- /#logo -->
 
-          <div class="menu-main" id="accordion">
-            <ul id="menuMain">
-              <li data-menuanchor="About" class="active"><a href="#About">About</a></li>
-              <li data-menuanchor="Services"><a href="#Services">Services</a></li>
-              <li data-menuanchor="Skills"><a href="#Skills">Skills</a></li>
-              <li data-menuanchor="Resume"><a href="#Resume">Resume</a></li>
-              <li data-menuanchor="Portfolio"><a href="#Portfolio">Portfolio</a></li>
-              <li data-menuanchor="Testimonials"><a href="#Testimonials">Testimonials</a></li>
-              <li data-menuanchor="Clients"><a href="#Clients">Clients</a></li>
-              <li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+                <div id="primary-menu">
+
+                    <div id="top-social">
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/maxim-huryanov-ba9499216/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/mhuryanov/"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://behance.net/maximhn"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /#top-social -->
+                </div>
+                <!-- /#primary-menu -->
+
+            </div>
+            <!-- /.container-fluid -->
+        </header>
+        <!-- /#header -->
+        <div id="side-menu" class="side-menu">
+            <ul class="nav" role="tablist">
+                <li class="active"><a data-type="section-switch" href="#banner"><i class="dti-home"></i></a></li>
+                <li><a data-type="section-switch" href="#about-us"><i class="dti-gear"></i></a></li>
+                <li><a data-type="section-switch" href="#why-choose-us"><i class="dti-key"></i></a></li>
+                <li><a data-type="section-switch" href="#portfolio"><i class="dti-picture"></i></a></li>
+                <li><a data-type="section-switch" href="#pricing-tables"><i class="dti-notebook"></i></a></li>
+                <li><a data-type="section-switch" href="#contact-area"><i class="dti-mails"></i></a></li>
             </ul>
-          </div>
-
-          <div class="menu-footer">
-            <div class="menu-footer-contacts">
-              <!-- <div class="menu-footer-phone"><a href="tel:+121553554427" class="phone-link">(+1) 215 5355 4427</a></div> -->
-              <div class="menu-footer-mail"><a href="mailto:mhuryanov@gmail.com" class="mail-link">mhuryanov@gmail.com</a>
-              </div>
-            </div>
-          </div>
-          <div class="menu-ornament"></div>
         </div>
-      </div>
-    </header>
+        <!-- /#side-menu -->
+
+        <!--==============================
+	=            Banner            =
+	==============================-->
+        <section id="banner" class="main-slider" data-carousel="swiper">
+            <div id="banner-container" class="swiper-container full-screen" data-swiper="container" data-loop="true" data-autoplay="7000">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-item" data-parallax="image" data-bg-image="images/slider/mask-girl.jpg">
+
+                        <div class="overlay full-screen" data-bg-color="rgba(0,0,0,0.55)">
+                            <div class="slide-caption">
+                                <h4 class="slide-mini-title text-center text-uppercase" data-animate="fadeInUp" data-delay="0.2s" data-duration="0.5s">Hello &amp; Welcome</h4>
+                                <h2 class="slider-huge-title text-center text-uppercase" data-animate="fadeInUp" data-delay="0.6s" data-duration="0.5s">I Am <span>Maxim Huryanov</span></h2>
+
+                                <div class="slide-tag text-center text-uppercase" data-animate="fadeInUp" data-delay="0.8s" data-duration="0.5s">
+                                    <span>build your website</span>
+                                    <span>-</span>
+                                    <span>grow your business</span>
+                                </div>
+                                <!-- /.slide-tag -->
+
+                                <div class="slide-description text-center" data-animate="fadeInUp" data-delay="1.0s" data-duration="0.5s">
+                                    <em>I create engaging websites and ongoing marketing support.</em>
+                                </div>
+                                <!-- /.slide-description -->
+                            </div>
+                            <!-- /.slide-caption -->
+                        </div>
+                        <!-- /.overlay -->
+
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide slide-item" data-parallax="image" data-bg-image="images/slider/3dman.jpg">
+
+                        <div class="overlay full-screen" data-bg-color="rgba(0,0,0,0.55)">
+                            <div class="slide-caption">
+                                <h4 class="slide-mini-title text-center text-uppercase" data-animate="fadeInUp" data-delay="0.2s" data-duration="0.5s">Hello &amp; Welcome</h4>
+                                <h2 class="slider-huge-title text-center text-uppercase" data-animate="fadeInUp" data-delay="0.6s" data-duration="0.5s">I Am <span>Powerful</span></h2>
+
+                                <div class="slide-tag text-center text-uppercase" data-animate="fadeInUp" data-delay="0.8s" data-duration="0.5s">
+                                    <span>build your website</span>
+                                    <span>-</span>
+                                    <span>grow your business</span>
+                                </div>
+                                <!-- /.slide-tag -->
+
+                                <div class="slide-description text-center" data-animate="fadeInUp" data-delay="1.0s" data-duration="0.5s">
+                                    <em>Whether you are working on a new startup or have an existing product, <br>I'd love the opportunity to help you and your team solve your most challenging problems.</em>
+                                </div>
+                                <!-- /.slide-description -->
+                            </div>
+                            <!-- /.slide-caption -->
+                        </div>
+                        <!-- /.overlay -->
+
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide slide-item" data-parallax="image" data-bg-image="images/slider/roar-lion.jpg">
+
+                        <div class="overlay full-screen" data-bg-color="rgba(0,0,0,0.55)">
+                            <div class="slide-caption">
+                                <h4 class="slide-mini-title text-center text-uppercase" data-animate="fadeInUp" data-delay="0.2s" data-duration="0.5s">Hello &amp; Welcome</h4>
+                                <h2 class="slider-huge-title text-center text-uppercase" data-animate="fadeInUp" data-delay="0.6s" data-duration="0.5s">I Am <span>Elegant</span></h2>
+
+                                <div class="slide-tag text-center text-uppercase" data-animate="fadeInUp" data-delay="0.8s" data-duration="0.5s">
+                                    <span>build your website</span>
+                                    <span>-</span>
+                                    <span>grow your business</span>
+                                </div>
+                                <!-- /.slide-tag -->
+
+                                <div class="slide-description text-center" data-animate="fadeInUp" data-delay="1.0s" data-duration="0.5s">
+                                    <em>Responsive Front-end Development<br>
+                                        Stubborn Back-end Development<br>
+                                        Project Management<br>
+                                        Intuitive UX/UI Suggest<br>
+                                        Database Design</em>
+                                </div>
+                                <!-- /.slide-description -->
+                            </div>
+                            <!-- /.slide-caption -->
+                        </div>
+                        <!-- /.overlay -->
+
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide slide-item" data-parallax="image" data-bg-image="images/slider/girls.jpg">
+
+                        <div class="overlay full-screen" data-bg-color="rgba(0,0,0,0.55)">
+                            <div class="slide-caption">
+                                <h4 class="slide-mini-title text-center text-uppercase" data-animate="fadeInUp" data-delay="0.2s" data-duration="0.5s">Hello &amp; Welcome</h4>
+                                <h2 class="slider-huge-title text-center text-uppercase" data-animate="fadeInUp" data-delay="0.6s" data-duration="0.5s">I Am The <span>Best</span></h2>
+
+                                <div class="slide-description text-center" data-margin-bottom="70px" data-animate="fadeInUp" data-delay="0.8s" data-duration="0.5s">
+                                    <em>I’m using top leading develop methods.</em>
+                                </div>
+                                <!-- /.slide-description -->
+
+                                <div class="slide-action text-center" data-animate="fadeInUp" data-delay="1.0s" data-duration="0.5s">
+                                    <a href="mailto:mhuryanov@gmail.com" class="dt-btn medium text-uppercase">Contact Now</a>
+                                </div>
+                                <!-- /.slide-action -->
+                            </div>
+                            <!-- /.slide-caption -->
+                        </div>
+                        <!-- /.overlay -->
+
+                    </div>
+                    <!-- /.swiper-slide -->
+                </div>
+                <!-- /.swiper-wrapper -->
+
+            </div>
+            <!-- /.swiper-container -->
+
+            <!-- Add Arrows -->
+            <div id="banner-slider-next" class="slide-button next dti-slim-right" data-swiper="next">
+            </div>
+            <div id="banner-slider-prev" class="slide-button prev dti-slim-left" data-swiper="prev">
+            </div>
+
+            <a data-type="section-switch" href="#about-us">
+                <div class="triangle">
+                    <span>More</span>
+                </div>
+                <!-- /.triangle -->
+            </a>
+        </section>
+        <!-- /#banner -->
 
 
-    <div id="content">
-      <div class="a-pagepiling full-page">
-        <div class="section pp-scrollable slide slide-about a-slide-typed" data-name="about">
-          <div class="slide-container">
-            <div class="lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="parallax" id="a-parallax">
-              <div class="layer shape shape2" data-depth="0.4">
-                <div class="inside animate-element delay4 bounceIn"></div>
-              </div>
-              <div class="layer shape shape3" data-depth="0.5">
-                <div class="inside animate-element delay5 bounceIn"></div>
-              </div>
-              <div class="layer shape shape4" data-depth="0.7">
-                <div class="inside animate-element delay4 bounceIn"></div>
-              </div>
-              <div class="layer shape shape5" data-depth="0.9">
-                <div class="inside animate-element delay5 bounceIn"></div>
-              </div>
-              <div class="layer shape shape6" data-depth="0.2">
-                <div class="inside animate-element delay6 bounceIn"></div>
-              </div>
-              <div class="layer shape shape7" data-depth="0.3">
-                <div class="inside animate-element delay3 bounceIn"></div>
-              </div>
-              <div class="layer shape shape8" data-depth="0.5">
-                <div class="inside animate-element delay8 bounceIn"></div>
-              </div>
-              <div class="layer shape shape9" data-depth="0.5">
-                <div class="inside animate-element delay9 bounceIn"></div>
-              </div>
-              <div class="layer shape shape10" data-depth="0.2">
-                <div class="inside animate-element delay7 bounceIn"></div>
-              </div>
-              <div class="layer shape shape11" data-depth="0.3">
-                <div class="inside animate-element delay8 bounceIn"></div>
-              </div>
-              <div class="layer shape shape12" data-depth="0.2">
-                <div class="inside animate-element delay9 bounceIn"></div>
-              </div>
-              <div class="layer shape shape13" data-depth="0.2">
-                <div class="inside animate-element delay10 bounceIn"></div>
-              </div>
-              <div class="layer shape shape14" data-depth="0.2">
-                <div class="inside animate-element delay11 bounceIn"></div>
-              </div>
-              <div class="layer shape shape15" data-depth="0.2">
-                <div class="inside animate-element delay12 bounceIn"></div>
-              </div>
-              <div class="layer shape shape16" data-depth="0.1">
-                <div class="inside animate-element delay13 bounceIn"></div>
-              </div>
-              <div class="layer shape shape1" data-depth="0.6">
-                <div class="inside animate-element delay4 bounceIn"></div>
-              </div>
-            </div>
+        <!--==============================
+	=            About Us          =
+	==============================-->
+        <section id="about-us">
             <div class="container">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                  <div class="animate-element delay5 fadeInUp">
-                    <div class="title-mini text-primary">About me</div>
-                    <h1 class="slide-title font-custom">Hello, I’m <span class="text-typed a-typed a-typed-about"
-                        data-text="Maxim Huryanov"></span><br /> I’m a full-stack web developer.</h1>
-                  </div>
-                  <div class="slide-descr animate-element delay7 fadeInUp">I will help you <strong>build your
-                      website</strong> and <strong>grow your business</strong>. I create engaging websites and ongoing marketing support.</div>
-                  <div class="slide-photo slide-photo-about">
-                    <div class="rounded-text">
-                      <svg viewBox="0 0 200 200">
-                        <path id="textPath" d="M 85,0 A 85,85 0 0 1 -85,0 A 85,85 0 0 1 85,0"
-                          transform="translate(100,100)" fill="none" stroke-width="0"></path>
-                        <g font-size="18.5px">
-                          <text text-anchor="start">
-                            <textPath xlink:href="#textPath" startOffset="0%">Backend Develop - Project Manager -
-                              Front-end Develop -</textPath>
-                          </text>
-                        </g>
-                      </svg>
-                    </div>
-                    <div class="inside"><img src="img/slide1.png" alt="" /></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="section pp-scrollable slide slide-services slide-dark slide-services a-slide-typed"
-          data-name="services">
-          <div class="slide-container">
-            <div class="lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+                <div class="section-header">
+
+                    <span class="heading-effect outside"></span>
+
+                    <h3 class="sub-heading wow fadeInUp" data-wow-delay="0.3s">You should know</h3>
+                    <h2 class="heading wow fadeInUp" data-wow-delay="0.5s"><span>Who</span> I Am</h2>
+
+                    <div class="description wow fadeInUp" data-wow-delay="0.7s">
+                        Do you need a professional website to support your business?<br> Or maybe do you desire to build a website that will go viral, brings you lots of revenue, and change your life?<br> If yes, You are in the right place.
+                    </div>
+                    <!-- /.description -->
+
+                </div>
+                <!-- /.section-header -->
+
+                <div class="row align-center">
+                    <div class="col-md-5 wow fadeInLeft" data-wow-delay="0.9s">
+                        <img src="images/others/human-tree0.png" style="margin-top:50px;" alt="Human Tree">
+                    </div>
+                    <!-- /.col-md-6 -->
+
+                    <div class="col-md-5 col-md-offset-2">
+                        <div class="row">
+                            <h4 class="text-uppercase skills-title" data-margin-bottom="95px">Skills</h4>
+
+                            <div class="skill-items">
+
+                                <div class="item wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="name">html/css/scss/javascript</div>
+                                    <div class="dt-progress">
+                                        <span data-amount="98%"></span>
+                                    </div>
+                                    <!-- /.dt-progress -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="item wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="name">Angular</div>
+                                    <div class="dt-progress">
+                                        <span data-amount="90%"></span>
+                                    </div>
+                                    <!-- /.dt-progress -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="item wow fadeInUp" data-wow-delay="0.7s">
+                                    <div class="name">React</div>
+                                    <div class="dt-progress">
+                                        <span data-amount="91%"></span>
+                                    </div>
+                                    <!-- /.dt-progress -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="item wow fadeInUp" data-wow-delay="0.9s">
+                                    <div class="name">Vue</div>
+                                    <div class="dt-progress">
+                                        <span data-amount="85%"></span>
+                                    </div>
+                                    <!-- /.dt-progress -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="item wow fadeInUp" data-wow-delay="0.7s">
+                                    <div class="name">Node.js</div>
+                                    <div class="dt-progress">
+                                        <span data-amount="88%"></span>
+                                    </div>
+                                    <!-- /.dt-progress -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="item wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="name">Python (Flask & Django)</div>
+                                    <div class="dt-progress">
+                                        <span data-amount="80%"></span>
+                                    </div>
+                                    <!-- /.dt-progress -->
+                                </div>
+                                <!-- /.item -->
+                                
+                                <div class="item wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="name">Ruby on Rails</div>
+                                    <div class="dt-progress">
+                                        <span data-amount="73%"></span>
+                                    </div>
+                                    <!-- /.dt-progress -->
+                                </div>
+                                <!-- /.item -->
+
+                            </div>
+                            <!-- /.skill-items -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.col-md-5 -->
+                </div>
+                <!-- /.row -->
+
             </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#about-us -->
+
+        <!--==============================
+	=            Why Choose Us     =
+	==============================-->
+        <section id="why-choose-us" data-type="overlay-section" data-bg-image="images/backgrounds/why-choose-us.jpg">
+            <div class="overlay" data-bg-color="rgba(255,255,255,0.9)" data-padding-bottom="300px">
+                <div class="container">
+
+                    <div class="section-header">
+                        <span class="heading-effect"></span>
+
+                        <h3 class="sub-heading wow fadeInUp" data-wow-delay="0.3s">You Can See Here</h3>
+                        <h2 class="heading wow fadeInUp" data-wow-delay="0.5s"><span>Why</span> Choose Me</h2>
+
+                        <div class="description wow fadeInUp" data-wow-delay="0.7s">
+                            I specialize in helping early stage startups validate their riskiest assumptions using leading develop methods.
+                        </div>
+                        <!-- /.description -->
+                    </div>
+                    <!-- /.section-header -->
+
+                    <div class="features-circle" data-padding-top="50px">
+                        <div class="row">
+
+                            <div class="col-sm-3">
+                                <div class="circle-iconic-box left-side">
+
+                                    <div class="box-item wow bounceInLeft" data-wow-delay="0.3s">
+                                        <div class="icon">
+                                            <i class="fa fa-html5"></i>
+                                        </div>
+                                        <!-- /.icon -->
+                                        <div class="content">
+                                            It's responsable.
+                                        </div>
+                                        <h4 class="title">Frontend Development</h4>
+                                        <!-- /.content -->
+                                    </div>
+                                    <!-- /.box-item -->
+
+                                    <div class="box-item wow bounceInLeft" data-wow-delay="0.5s">
+                                        <div class="icon">
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                        <!-- /.icon -->
+                                        <div class="content">
+                                            Pick up new technologies as required.
+                                        </div>
+                                        <h4 class="title">Quick Learner</h4>
+                                        <!-- /.content -->
+                                    </div>
+                                    <!-- /.box-item -->
+
+                                    <div class="box-item wow bounceInLeft" data-wow-delay="0.7s">
+                                        <div class="icon">
+                                            <i class="fa fa-code"></i>
+                                        </div>
+                                        <!-- /.icon -->
+                                        <div class="content">
+                                            Full experience.
+                                        </div>
+                                        <h4 class="title">Strong Coding</h4>
+                                        <!-- /.content -->
+                                    </div>
+                                    <!-- /.box-item -->
+
+                                </div>
+                                <!-- /.left-side -->
+                            </div>
+                            <!-- /.col-sm-3 -->
+
+                            <div class="col-sm-6">
+                                <div class="middle-circle">
+
+                                    <div class="icon size-xxl wow bounceIn" data-wow-delay="0.3s">
+                                        <span class="direction"></span>
+                                        <i class="fa fa-html5"></i>
+                                    </div>
+                                    <!-- /.icon -->
+
+                                    <div class="icon size-m wow bounceIn" data-wow-delay="0.5s">
+                                        <span class="direction"></span>
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <!-- /.icon -->
+
+                                    <div class="icon wow bounceIn" data-wow-delay="0.7s">
+                                        <span class="direction"></span>
+                                        <i class="fa fa-code"></i>
+                                    </div>
+                                    <!-- /.icon -->
+
+                                    <img src="assets/img/logo-v2.png" alt="KingMa">
+
+                                    <div class="icon wow bounceIn" data-wow-delay="0.3s">
+                                        <span class="direction"></span>
+                                        <i class="fa fa-users"></i>
+                                    </div>
+                                    <!-- /.icon -->
+
+                                    <div class="icon size-l wow bounceIn" data-wow-delay="0.5s">
+                                        <span class="direction"></span>
+                                        <i class="fa fa-tasks"></i>
+                                    </div>
+                                    <!-- /.icon -->
+
+                                    <div class="icon wow bounceIn" data-wow-delay="0.7s">
+                                        <span class="direction"></span>
+                                        <i class="fa fa-pencil"></i>
+                                    </div>
+                                    <!-- /.icon -->
+
+                                    <div class="icon size-xl wow bounceIn" data-wow-delay="0.9s">
+                                        <span class="direction"></span>
+                                        <i class="fa fa-database"></i>
+                                    </div>
+                                    <!-- /.icon -->
+
+                                </div>
+                                <!-- /.middle-circle -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+
+                            <div class="col-sm-3">
+                                <div class="circle-iconic-box right-side">
+
+                                    <div class="box-item wow bounceInRight" data-wow-delay="0.3s">
+                                        <div class="icon">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                        <!-- /.icon -->
+                                        <div class="content">
+                                            Good communication
+                                        </div>
+                                        <h4 class="title">Team Player</h4>
+                                        <!-- /.content -->
+                                    </div>
+                                    <!-- /.box-item -->
+
+                                    <div class="box-item wow bounceInRight" data-wow-delay="0.5s">
+                                        <div class="icon">
+                                            <i class="fa fa-tasks"></i>
+                                        </div>
+                                        <!-- /.icon -->
+                                        <div class="content">
+                                            It's strong.
+                                        </div>
+                                        <h4 class="title">Project Management</h4>
+                                        <!-- /.content -->
+                                    </div>
+                                    <!-- /.box-item -->
+
+                                    <div class="box-item wow bounceInRight" data-wow-delay="0.7s">
+                                        <div class="icon">
+                                            <i class="fa fa-pencil"></i>
+                                        </div>
+                                        <!-- /.icon -->
+                                        <div class="content">
+                                            It's flexible.
+                                        </div>
+                                        <h4 class="title">Easy To Maintenance</h4>
+                                        <!-- /.content -->
+                                    </div>
+                                    <!-- /.box-item -->
+
+                                    <div class="box-item wow bounceInRight" data-wow-delay="0.9s">
+                                        <div class="icon">
+                                            <i class="fa fa-database"></i>
+                                        </div>
+                                        <!-- /.icon -->
+                                        <div class="content">
+                                            It's Stubborn.
+                                        </div>
+                                        <h4 class="title">Backend Development</h4>
+                                        <!-- /.content -->
+                                    </div>
+                                    <!-- /.box-item -->
+
+                                </div>
+                                <!-- /.right-side -->
+                            </div>
+                            <!-- /.col-sm-3 -->
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.features-circle -->
+
+                </div>
+                <!-- /.container -->
+
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- /.overlay -->
+        </section>
+        <!-- /#why-choose-us -->
+
+        <!--==============================
+	=            Site Stats        =
+	==============================-->
+        <section id="site-stats" class="section-padding" data-padding-top="90px" data-padding-bottom="90px" data-bg-color="#f2f4f6">
             <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-5">
-                  <div class="animate-element delay5 fadeInUp">
-                    <div class="title-mini text-primary">my services</div>
-                    <h2 class="slide-title font-custom"><span class="text-typed a-typed a-typed-services"
-                        data-text="Build your website"></span> and<br /> grow your business.</h2>
-                  </div>
-                  <div class="slide-descr animate-element delay7 fadeInUp">Whether you are working on a new startup or
-                    have an existing product, I'd love the opportunity to help you and your team <strong>solve your most
-                      challenging</strong> problems.</div>
+                <div class="row">
 
-                  <nav class="service-list animate-element delay9 fadeInUp">
-                    <ul class="">
-                      <li class="primary-link"><a href="#">Responsive Front-end Development</a></li>
-                      <li class="primary-link"><a href="#">Stubborn Back-end Development</a></li>
-                      <li class="primary-link"><a href="#">Project Management</a></li>
-                      <li class="primary-link"><a href="#">Intuitive UX/UI Suggest</a></li>
-                      <li class="primary-link"><a href="#">Database Design</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                  <div class="slide-photo slide-photo-services">
-                    <div class="inside"><img src="img/slide2.png" alt="" /></div>
-                    <div class="image-card card2-1 animate-element delay8 fadeInRight">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card2-1.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card2-2 animate-element delay9 fadeInUp">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card2-2.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card2-3 animate-element delay10 fadeInUp">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card2-3.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card image-card-dark card2-4 animate-element delay11 fadeInRight">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card2-4.png" alt="" /></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="stats-item">
 
-        <div class="section pp-scrollable slide slide-skills a-slide-typed" data-name="skills">
-          <div class="slide-container">
-            <div class="lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+                            <div class="glass-icon">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <!-- /.glass-icon -->
+
+                            <div class="stat-info">
+                                <div class="back-amount" data-countup="142">
+                                    142
+                                </div>
+                                <!-- /.back-amount -->
+                                <div class="amount" data-countup="142">
+                                    142
+                                </div>
+                                <!-- /.amount -->
+                                <div class="type">
+                                    Total Clients
+                                </div>
+                                <!-- /.type -->
+                            </div>
+                            <!-- /.stat-amount -->
+
+                        </div>
+                        <!-- /.stats-item -->
+                    </div>
+                    <!-- /.col-md-4 col-sm-6 -->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0s">
+                        <div class="stats-item">
+
+                            <div class="glass-icon">
+                                <i class="fa fa-hand-o-right"></i>
+                            </div>
+                            <!-- /.glass-icon -->
+
+                            <div class="stat-info">
+                                <div class="back-amount" data-countup="11">
+                                    11
+                                </div>
+                                <!-- /.back-amount -->
+                                <div class="amount" data-countup="11">
+                                    11
+                                </div>
+                                <!-- /.amount -->
+                                <div class="type">
+                                    Trusted Sponsors
+                                </div>
+                                <!-- /.type -->
+                            </div>
+                            <!-- /.stat-info -->
+
+                        </div>
+                        <!-- /.stats-item -->
+                    </div>
+                    <!-- /.col-md-3 col-sm-6 -->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="stats-item">
+
+                            <div class="glass-icon">
+                                <i class="fa fa-trophy"></i>
+                            </div>
+                            <!-- /.glass-icon -->
+
+                            <div class="stat-info">
+                                <div class="back-amount" data-countup="95">
+                                    95%
+                                </div>
+                                <!-- /.back-amount -->
+                                <div class="amount" data-countup="95">
+                                    95%
+                                </div>
+                                <!-- /.amount -->
+                                <div class="type">
+                                    Sensitive Feedback
+                                </div>
+                                <!-- /.type -->
+                            </div>
+                            <!-- /.stat-info -->
+
+                        </div>
+                        <!-- /.stats-item -->
+                    </div>
+                    <!-- /.col-md-3 col-sm-6 -->
+
+                </div>
+                <!-- /.row -->
             </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#site-stats -->
+
+        <!--==============================
+	=            Portfolio         =
+	==============================-->
+        <section id="portfolio" data-bg-color="#f2f4f6">
+            <div class="section-header">
+
+                <span class="heading-effect outside"></span>
+
+                <h3 class="sub-heading wow fadeInUp" data-wow-delay="0.3s">You should know</h3>
+                <h2 class="heading wow fadeInUp" data-wow-delay="0.5s"><span>Great</span> Portfolio</h2>
+
+            </div>
+            <!-- /.section-header -->
+
+            <div class="portfolio-container wow fadeIn" data-wow-delay="0.3s" data-area="isotope">
+
+                <div id="filters" class="button-group filter-btns" data-isotope="filters">
+                    <button class="button is-checked" data-filter="*">All</button>
+                    <button class="button" data-filter=".cat-1">Web Design</button>
+                    <button class="button" data-filter=".cat-2">Frontend</button>
+                    <button class="button" data-filter=".cat-3">Backend</button>
+                </div>
+
+                <div id="suoer" class="masonry-grid" data-isotope="container">
+
+                    <div class="grid-sizer"></div>
+
+                    <div class="grid-item width4 cat-3 cat-2">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-1.jpg"></div>
+                            
+                                <div class="overlay-content">
+                                    <a href="https://contingent.ai/">
+                                        <div class="info">
+                                            <h3 class="title">Contingent</h3>
+                                            <div class="categories">Full-stack</div>
+                                        </div>
+                                    </a>
+                                    <!-- /.info -->
+                                </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+
+                    <div class="grid-item width4 cat-3 cat-2">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-10.jpg"></div>
+                            
+                                <div class="overlay-content">
+                                    <a href="https://scribbletogether.com/">
+                                        <div class="info">
+                                            <h3 class="title">ScribbleTogether</h3>
+                                            <div class="categories">Full-stack</div>
+                                        </div>
+                                    </a>
+                                    <!-- /.info -->
+                                </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+
+                    <div class="grid-item width4 cat-2 cat-3">
+                        <div class="content">
+
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-11.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://boonsupply.com/">
+                                    <div class="info">
+                                        <h3 class="title">Boonsupply</h3>
+                                        <div class="categories">Full-stack</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+                    <div class="grid-item width4 cat-2 cat-1">
+                        <div class="content">
+
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-3.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://www.behance.net/gallery/117872267/Map-view-fleet-tracking-web-app-%28VueJS%29">
+                                    <div class="info">
+                                        <h3 class="title">Map View Fleet Tracking Web app</h3>
+                                        <div class="categories">Front-end</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+                    
+                    <div class="grid-item width4 cat-2">
+                        <div class="content">
+
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-12.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://sumi.fillinglife.co/">
+                                    <div class="info">
+                                        <h3 class="title">FIL - SUMI LIMITED</h3>
+                                        <div class="categories">Front-end</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+
+                    <div class="grid-item width4 cat-2 cat-1">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-7.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://www.behance.net/gallery/117872267/Map-view-fleet-tracking-web-app-%28VueJS%29">
+                                    <div class="info">
+                                        <h3 class="title">Learning Course/Music Player</h3>
+                                        <div class="categories">Front-end</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+                    <div class="grid-item width4 cat-2">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-6.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://www.behance.net/gallery/78504603/Online-Learning-Course-UI">
+                                    <div class="info">
+                                        <h3 class="title">Admin Dashboard</h3>
+                                        <div class="categories">Front-end</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+                    <div class="grid-item width4 cat-1 cat-2">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-5.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://www.behance.net/gallery/78504567/Dashboard-UI-with-ReactJS">
+                                    <div class="info">
+                                        <h3 class="title">Dashboard</h3>
+                                        <div class="categories">Front-end</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+
+                    <div class="grid-item width4 cat-2 cat-3">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-8.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://www.behance.net/gallery/117872125/Dark-Architect-web-app-%28UIUX-design-built-with-Vue%29">
+                                    <div class="info">
+                                        <h3 class="title">Real Estate CRM</h3>
+                                        <div class="categories">Full-stack</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+
+                    <div class="grid-item width4 cat-2">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-4.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://github.com/mhuryanov/Apex">
+                                    <div class="info">
+                                        <h3 class="title">Apex</h3>
+                                        <div class="categories">Front-end</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+
+                    <div class="grid-item width4 cat-1 cat-2">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-9.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://www.behance.net/gallery/78475777/Music-Web-App-with-Angular-5-Firebase">
+                                    <div class="info">
+                                        <h3 class="title">Music App</h3>
+                                        <div class="categories">Full-stack</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+
+                    <div class="grid-item width4 cat-2 cat-3">
+                        <div class="content">
+                            <div class="item-img" data-bg-image="images/portfolio/portfolio-item-2.jpg"></div>
+
+                            <div class="overlay-content">
+                                <a href="https://www.behance.net/gallery/130041393/Food-website">
+                                    <div class="info">
+                                        <h3 class="title">Restraunt Reservation</h3>
+                                        <div class="categories">Full-stack</div>
+                                    </div>
+                                </a>
+                                <!-- /.info -->
+
+                            </div>
+                            <!-- /.overlay-content -->
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.item -->
+
+                </div>
+            </div>
+            <!-- /.portfolio-container -->
+
+            <div data-padding-top="185px"></div>
+
+            <div class="triangle-area wow bounceIn" data-wow-delay="0.3s">
+                <a data-type="section-switch" href="#services">
+                    <div class="triangle">
+                    </div>
+                    <!-- /.triangle -->
+                </a>
+            </div>
+            <!-- /.triangle-area -->
+        </section>
+        <!-- /#portfolio -->
+
+        <!--==============================
+	=            Pricing Table      =
+	==============================-->
+        <section id="pricing-tables" class="pricing-section" data-bg-color="#f2f4f6" data-padding-bottom="150px">
+
+            <div class="section-header">
+                <span class="heading-effect"></span>
+
+                <h3 class="sub-heading">Education and</h3>
+                <h2 class="heading">Work <span>History</span></h2>
+            </div>
+            <!-- /.section-header -->
+
             <div class="container">
-              <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-5">
-                  <div class="animate-element delay5 fadeInUp">
-                    <div class="title-mini text-primary">my featured skills</div>
-                    <h2 class="slide-title font-custom">I’m using <span class="text-typed a-typed a-typed-skills"
-                        data-text="top leading"></span><br /> develop methods.</h2>
-                  </div>
-                  <div class="slide-descr animate-element delay7 fadeInUp">I specialize in helping early stage startups
-                    validate their riskiest assumptions using <strong>leading develop methods</strong>.</div>
+                <div class="col-md-5 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="row">
+                        <div class="pricing-table">
+                            <div class="pricing-header">
+                                <h4 class="name">Education</h4>
+                                <div class="price"><small>COMPUTER SCIENCE</small></div>
+                                <div class="cycle">National University of Engineering</div>
+                                <div class="cycle date">Jan 2019 - Dec 2020</div>
+                                <div class="cycle detail">Major in Full-stack web programming</div>
 
-                  <div class="bar-list a-progressbar animate-element delay9 fadeInUp">
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">HTML/CSS/SCSS/JAVASCRIPT</div>
-                        <div class="col-auto text-right bar-item-value">98%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
+                                <div class="price"><small>MATHEMATICS</small></div>
+                                <div class="cycle">NUWM Technical College</div>
+                                <div class="cycle date">Jan 2016 - Dec 2019</div>
+                                <div class="cycle detail">Major in Software development, Computer Mathematics and Algorithms</div>
+                            </div>
+                            <!-- /.pricing-header -->
+                        </div>
+                        <!-- /.pricing-table -->
                     </div>
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">Angular</div>
-                        <div class="col-auto text-right bar-item-value">90%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">React</div>
-                        <div class="col-auto text-right bar-item-value">90%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">Vue</div>
-                        <div class="col-auto text-right bar-item-value">80%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">Ruby on Rails</div>
-                        <div class="col-auto text-right bar-item-value">80%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">Python (Flask & Django)</div>
-                        <div class="col-auto text-right bar-item-value">78%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">Node.js</div>
-                        <div class="col-auto text-right bar-item-value">88%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">CI/CD + Testing</div>
-                        <div class="col-auto text-right bar-item-value">70%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="bar-item">
-                      <div class="row">
-                        <div class="col bar-item-title">AWS</div>
-                        <div class="col-auto text-right bar-item-value">80%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                  </div>
+                    <!-- /.row -->
                 </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                  <div class="slide-photo">
-                    <div class="image-card card3-1 animate-element delay8 zoomIn">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/slide3.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card3-2 image-card-dark animate-element delay12 fadeInUp">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card3-2.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card3-3 animate-element delay9 fadeInUp">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card3-3.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card3-4 animate-element delay13 fadeInLeft">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card3-4.png" alt="" /></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section pp-scrollable slide slide-resume slide-dark">
-          <div class="slide-container">
-            <div class="lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-4">
-                  <div class="slide-photo slide-photo-education">
-                    <div class="slide-photo-bg-rounded photo-bg-education animate-element delay5 bounceIn">
-                      <div class="inside">
-                        <div class="education-image"><img src="img/slide4-1.png" alt="" /></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="animate-element delay9 fadeInUp">
-                    <h2 class="slide-title font-custom slide-title-margin-md">Education</h2>
-                    <div class="vacancy-item">
-                      <div class="vacancy-item-title"><a href="#">Computer Science</a></div>
-                      <div class="vacancy-item-place">National University of Engineering</div>
-                      <div class="vacancy-item-time text-primary">Jan 2019 - Dec 2022</div>
-                      <div class="vacancy-item-text">Major in Full-stack web programming</div>
-                    </div>
-                    <div class="vacancy-item">
-                      <div class="vacancy-item-title"><a href="#">Mathematics</a></div>
-                      <div class="vacancy-item-place">NUWM Technical College</div>
-                      <div class="vacancy-item-time text-primary">Jan 2016 - Dec 2019</div>
-                      <div class="vacancy-item-text">Major in Software development, Computer Mathematics and Algorithms</div>
-                    </div>
-                  </div>
-                </div>
+                <!-- /.col-md-5 -->
                 <div class="col-md-2"></div>
-                <div class="col-md-4">
-                  <div class="slide-photo slide-photo-experience">
-                    <div class="slide-photo-bg-rounded photo-bg-experience animate-element delay7 bounceIn">
-                      <div class="inside">
-                        <div class="experience-image"><img src="img/slide4-2.png" alt="" /></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="animate-element delay11 fadeInUp">
-                    <h2 class="slide-title font-custom slide-title-margin-md">Experience</h2>
-                    <div class="vacancy-item">
-                      <div class="vacancy-item-title"><a href="#">Ruby on Rails/Python Developer</a></div>
-                      <div class="vacancy-item-place"><b>GBKSOFT</b>, Software Development Company</div>
-                      <div class="vacancy-item-time text-primary">March 2017 - Aug 2019</div>
-                      <div class="vacancy-item-text">Develop platforms and websites with RoR/Python frameworks</div>
-                    </div>
-                    <div class="vacancy-item">
-                      <div class="vacancy-item-title"><a href="#">PHP/Javascript Developer</a></div>
-                      <div class="vacancy-item-place"><b>Redwerk</b>, Software development Company</div>
-                      <div class="vacancy-item-time text-primary">Feb 2016 - March 2017</div>
-                      <div class="vacancy-item-text">Develop websites with PHP/Javascript frameworks</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="col-md-5 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="row">
+                        <div class="pricing-table">
+                            <div class="pricing-header">
+                                <h4 class="name">Experience</h4>
+                                <div class="price"><small>ROR/PYTHON DEVELOPER</small></div>
+                                <div class="cycle">GBKSOFT, Software Development Company</div>
+                                <div class="cycle date">March 2017 - Aug 2019</div>
+                                <div class="cycle detail">Build platforms and websites with RoR/Python frameworks</div>
 
-        <div class="section pp-scrollable slide slide-portfolio a-slide-typed" data-name="portfolio">
-          <div class="slide-container">
-            <div class="lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+                                <div class="price"><small>PHP/JS DEVELOPER</small></div>
+                                <div class="cycle">Redwerk, Software development Company</div>
+                                <div class="cycle date">Feb 2016 - March 2017</div>
+                                <div class="cycle detail">Build websites with PHP/Javascript frameworks</div>
+                            </div>
+                            <!-- /.pricing-header -->
+                        </div>
+                        <!-- /.pricing-table -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.col-md-5 -->
             </div>
-            <div class="slide-ornament">
-              <div class="inside"></div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /#pricing-tables -->
+
+        <!--==============================
+	=            Clients Says      =
+	==============================-->
+        <section id="client-testimonials" class="transparent-section" data-parallax="image" data-bg-image="images/backgrounds/client-says.jpg">
+            <div class="overlay" data-bg-color="rgba(0,0,0,0.85)">
+
+                <div class="section-header">
+                    <span class="heading-effect"></span>
+
+                    <h3 class="sub-heading wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.5s">Hear What My</h3>
+                    <h2 class="heading wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.8s"><span>Clients</span> Says</h2>
+                </div>
+                <!-- /.section-header -->
+
+                <div class="container">
+                    <div class="clients-says-carousel wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="1.1s" data-carousel="swiper">
+
+                        <!-- Swiper -->
+                        <div id="swiper-unique-container-2" class="swiper-container" data-swiper="container" data-loop="true">
+
+                            <div class="swiper-wrapper clients-says-items">
+
+                                <div class="swiper-slide item">
+                                    <div class="info">
+                                        <div class="photo">
+                                            <img src="assets/img/adam.jpg" alt="CLient 1">
+                                        </div>
+                                        <!-- /.photo -->
+
+                                        <div class="name-job">
+                                            <h4 class="name">Adam Gardiner</h4>
+                                            <div class="job">CCO, COO and CMO at Goldco</div>
+                                        </div>
+                                        <!-- /.name-job -->
+                                    </div>
+                                    <!-- /.info -->
+
+                                    <div class="content">
+                                        “Maxim was great to work with. He delivered my project faster than I was expecting and it worked perfectly right away. I'll definitely be working with him again in the future.”
+                                    </div>
+                                    <!-- /.content -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="swiper-slide item">
+                                    <div class="info">
+                                        <div class="photo">
+                                            <img src="assets/img/brad.jfif" alt="CLient 2">
+                                        </div>
+                                        <!-- /.photo -->
+
+                                        <div class="name-job">
+                                            <h4 class="name">Nuno Simaria</h4>
+                                            <div class="job">CTO at HelloFresh</div>
+                                        </div>
+                                        <!-- /.name-job -->
+                                    </div>
+                                    <!-- /.info -->
+
+                                    <div class="content">
+                                        “Thanks so much to Maxim for his professionalism and willingness to revise design until satisfactory!”
+                                    </div>
+                                    <!-- /.content -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="swiper-slide item">
+                                    <div class="info">
+                                        <div class="photo">
+                                            <img src="assets/img/bridger.jfif" alt="CLient 2">
+                                        </div>
+                                        <!-- /.photo -->
+
+                                        <div class="name-job">
+                                            <h4 class="name">Bridger Maxwell</h4>
+                                            <div class="job">CEO and Co Founder at Scribble</div>
+                                        </div>
+                                        <!-- /.name-job -->
+                                    </div>
+                                    <!-- /.info -->
+
+                                    <div class="content">
+                                        “Maxim jumped into a complex project and did a great job ramping up and completing the large features. It went so well, we asked him to work on other big features we had planned. He kept us updated on progress and was very open to feedback to match the style of code we had in the project already. We hope to work with him again!”
+                                    </div>
+                                    <!-- /.content -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="swiper-slide item">
+                                    <div class="info">
+                                        <div class="photo">
+                                            <img src="assets/img/aaron.jpg" alt="CLient 2">
+                                        </div>
+                                        <!-- /.photo -->
+
+                                        <div class="name-job">
+                                            <h4 class="name">Vasil Ivanov</h4>
+                                            <div class="job">CTO at 10minutes AG</div>
+                                        </div>
+                                        <!-- /.name-job -->
+                                    </div>
+                                    <!-- /.info -->
+
+                                    <div class="content">
+                                        “Kudos to Maxim for the job well done. It's not every time you find a developer like him who gets that it's not just a quick job, that some project might be a very important piece of other people's life. Thanks for paying attention to details and for having a good sense of collaboration.”
+                                    </div>
+                                    <!-- /.content -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="swiper-slide item">
+                                    <div class="info">
+                                        <div class="photo">
+                                            <img src="assets/img/niko.jfif" alt="CLient 2">
+                                        </div>
+                                        <!-- /.photo -->
+
+                                        <div class="name-job">
+                                            <h4 class="name">Niko Sluzki</h4>
+                                            <div class="job">CTO at Designosis</div>
+                                        </div>
+                                        <!-- /.name-job -->
+                                    </div>
+                                    <!-- /.info -->
+
+                                    <div class="content">
+                                        "Maxim was somewhat new, however on interviewing him, it was immediately apparent that he really knew his stuff. So we took a chance. We struck gold. His input was insightful, his output was exemplary, he was available seemingly 24/7, and he handled our very complex UI requirements like a boss. Phenomenal across the board."
+                                    </div>
+                                    <!-- /.content -->
+                                </div>
+                                <!-- /.item -->
+
+                            </div>
+                            <!-- ./clients-says-items -->
+
+                        </div>
+                        <!-- /.swiper-container -->
+
+                        <!-- Add Arrows -->
+                        <div class="controls wow fadeIn" data-wow-duration="1.0s" data-wow-delay="0.5s">
+                            <div id="swiper-unique-control-prev-2" data-swiper="prev">
+                                <i class="dti-angle-down-left"></i>
+                            </div>
+                            <div id="swiper-unique-control-next-2" data-swiper="next">
+                                <i class="dti-angle-up-right"></i>
+                            </div>
+                        </div>
+                        <!-- /.controls -->
+
+                    </div>
+                    <!-- /.clients-says-carousel -->
+                </div>
+                <!-- /.container -->
+
+                <div data-padding-top="150px"></div>
+
             </div>
+            <!-- /.overlay -->
+        </section>
+        <!-- /#client-testimonials -->
+
+        <!--==============================
+	=            Contact		    =
+	==============================-->
+        <!-- <section id="contact-area" data-bg-color="#f4f4f6" data-padding-bottom="150px">
             <div class="container">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-8 animate-element delay5 fadeInUp">
-                  <div class="title-mini text-primary">My portfolio</div>
-                  <h1 class="slide-title font-custom slide-title-margin-lg">Some of my <span
-                      class="text-typed a-typed a-typed-portfolio" data-text="latest works."></span></h1>
-                </div>
-              </div>
-              <div
-                class="portfolio-carousel a-portfolio-carousel owl-carousel owl-theme animate-element delay7 fadeInUp">
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank" href="https://contingent.ai/"><img
-                        src="img/portfolios/contingent.jpg" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Contingent</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://pixinvent.com/demo/apex-react-redux-bootstrap-admin-dashboard-template/demo-1/"><img
-                        src="img/portfolios/apex.jpg" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Apex</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="http://egret-angular.ui-lib.com/dashboard/analytics?layout=%7B%22navigationPos%22:%20%22side%22,%20%22sidebarStyle%22:%20%22full%22,%20%22sidebarColor%22:%20%22slate%22,%20%22topbarColor%22:%20%22white%22,%20%22footerColor%22:%20%22slate%22,%20%22dir%22:%20%22ltr%22,%20%22useBreadcrumb%22:%20true,%20%22topbarFixed%22:%20false,%20%22breadcrumb%22:%20%22simple%22,%20%22matTheme%22:%20%22egret-navy%22%7D"><img
-                        src="img/portfolios/egret.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Egret</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank" href="http://rubick-vue.left4code.com/"><img
-                        src="img/portfolios/rubik.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Rubick</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank" href="https://preloved.co.uk/"><img
-                        src="img/portfolios/preloved.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Preloved</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank" href="https://patrickmahomes.com/"><img
-                        src="img/portfolios/patrick.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Patrick Mahomes II</a></div>
-                    
-                  </div>
+
+                <div class="section-header">
+                    <span class="heading-effect"></span>
+
+                    <h3 class="sub-heading wow fadeInUp" data-wow-delay="0.3s">Say Hello</h3>
+                    <h2 class="heading wow fadeInUp" data-wow-delay="0.5s"><span>Thank you </span> for your visit</h2>
                 </div>
 
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank" href="https://www.boonsupply.com/"><img
-                        src="img/portfolios/boonsupply.jpg" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Boon Supply</a></div>
-                    
-                  </div>
+                <div class="col-md-offset-2 col-md-8">
+                    <a href="mailto:mhuryanov@gmail.com">mhuryanov@gmail.com</a>
                 </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                      target="_blank"
-                      href="https://www.behance.net/gallery/78504567/Dashboard-UI-with-ReactJS"><img
-                        src="img/portfolios/dashboard1.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Bwin Dashboard React Theme</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/117872267/Map-view-fleet-tracking-web-app-%28VueJS%29"><img
-                        src="img/portfolios/map-view.jpg" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Map View Fleet Tracking Web App</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/120188631/Covid-19-Dashboard-%28Angular%29"><img
-                        src="img/portfolios/covid.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Covid-19 Dashboard</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/117872355/Marketing-Automation-Dashboard-%28Angular-React-Vue%29"><img
-                        src="img/portfolios/dashboard2.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Marketing Automation Dashboard</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/78475897/Admin-UI-with-React"><img
-                        src="img/portfolios/dashboard3.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Admin Dashboard</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/117872125/Dark-Architect-web-app-%28UIUX-design-built-with-Vue%29"><img
-                        src="img/portfolios/architect.jpg" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Dark Architect App</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/117871427/Coupon-CMS-template-with-Angular"><img
-                        src="img/portfolios/coupon.jpg" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Coupon CMS template</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/78504603/Online-Learning-Course-UI"><img
-                        src="img/portfolios/online_course.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Online Learning Course UI</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/120147269/Perfect-Home%28DesignLanding-Page%29"><img
-                        src="img/portfolios/perfect_home.jpg" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Perfect Home</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/117886243/Ukraine-Mazda-%28Angular-Design%29"><img
-                        src="img/portfolios/mazda.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Ukraine Mazda</a></div>
-                    
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-item-photo"><a
-                    target="_blank"
-                      href="https://www.behance.net/gallery/117891845/MrVR-%28-Landing-Page-UI-%29"><img
-                        src="img/portfolios/mrvr.png" alt="" /></a></div>
-                  <div class="portfolio-item-detail">
-                    <div class="portfolio-item-title primary-link"><a href="#">Mr.VR</a></div>
-                    
-                  </div>
-                </div>
-
-              </div>
             </div>
-          </div>
+        </section> -->
+        <!-- /#contact-area -->
+
+        <!--==============================
+	=            Footer		    	=
+	==============================-->
+        <section id="footer">
+            <div class="overlay relative" data-bg-color="#f4f4f6" data-padding-bottom="100px">
+                <div class="section-header">
+
+                    <span class="heading-effect outside"></span>
+                    <div class="clearfix"></div>
+                    <img src="assets/img/logo-v3.png" alt="KingMa">
+
+                </div>
+                <!-- /.section-header -->
+
+                <div class="container">
+                    <div class="footer-description text-center" data-margin-bottom="65px">
+                        I’m always interested in hearing about new projects and opportunities.<br> You can tell me about the problems you are trying to solve.<br> I'd love to listen and see if there's anything I can do to help you.
+                    </div>
+                    <!-- /.footer-description -->
+
+                    <ul class="contact-address list-unstyled text-center" data-margin-bottom="75px">
+                        <li><a href="mailto:mhuryanov@gmail.com">mhuryanov@gmail.com</a></li>
+                    </ul>
+                    <!-- /.contact-address -->
+
+                    <ul class="social-icons text-center rounded medium">
+                        <li><a href="https://www.linkedin.com/in/maxim-huryanov-ba9499216/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/mhuryanov/"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://behance.net/maximhn"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                    <!-- /.social-icons -->
+                </div>
+                <!-- /.container -->
+
+            </div>
+            <!-- /.overlay -->
+        </section>
+        <!-- /#footer -->
+
+        <div id="back-to-top">
+            <span>Top</span>
         </div>
+        <!-- /#back-to-top -->
 
-        <div class="section pp-scrollable slide slide-testimonials">
-          <div class="slide-container">
-            <div class="lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="container">
-              <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-5">
-                  <div class="animate-element delay5 fadeInUp">
-                    <div class="title-mini title-mini-margin-lg text-primary">testimonials</div>
-                    <h3 class="slide-title font-custom">It really saves me time and effort Maxim is...</h3>
-                  </div>
-
-                  <div
-                    class="testimonial-carousel a-testimonial-carousel owl-carousel owl-theme animate-element delay7 fadeInUp">
-
-                    <div class="testimonial-item">
-                      <div class="slide-descr testimonial-item-text">"Maxim was great to work with. He delivered my project faster than I was expecting and it worked perfectly right away. I'll definitely be working with him again in the future."</div>
-                      <div class="testimonial-item-author">
-                        <div class="media">
-                          <div class="align-self-center mr-3">
-                            <div class="avatar testimonial-avatar">
-                              <div class="inside" style="background-image: url(img/adam.jpg);"></div>
-                            </div>
-                          </div>
-                          <div class="align-self-center media-body">
-                            <div class="testimonial-item-author-name">Adam Gardiner</div>
-                            <div class="testimonial-item-author-status">CCO, COO and CMO at Goldco</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                      <div class="slide-descr testimonial-item-text">"Thanks so much to Maxim for his professionalism
-                        and willingness to revise design until satisfactory!"</div>
-                      <div class="testimonial-item-author">
-                        <div class="media">
-                          <div class="align-self-center mr-3">
-                            <div class="avatar testimonial-avatar">
-                              <div class="inside" style="background-image: url(img/brad.jfif);"></div>
-                            </div>
-                          </div>
-                          <div class="align-self-center media-body">
-                            <div class="testimonial-item-author-name">Nuno Simaria</div>
-                            <div class="testimonial-item-author-status">CTO at HelloFresh</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <div class="footer-blank"></div>
+        <!-- /.footer-blank -->
 
 
 
-                    <div class="testimonial-item">
-                      <div class="slide-descr testimonial-item-text">"Maxim was great to work with. He delivered my
-                        project faster than I was expecting and it worked perfectly right away. I'll definitely be
-                        working with him again in the future."</div>
-                      <div class="testimonial-item-author">
-                        <div class="media">
-                          <div class="align-self-center mr-3">
-                            <div class="avatar testimonial-avatar">
-                              <div class="inside" style="background-image: url(img/bridger.jfif);"></div>
-                            </div>
-                          </div>
-                          <div class="align-self-center media-body">
-                            <div class="testimonial-item-author-name">Bridger Maxwell</div>
-                            <div class="testimonial-item-author-status">CEO and Co Founder at Scribble</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                      <div class="slide-descr testimonial-item-text">"These concepts came out great and the additional
-                        colorways came out looking super! Excited to refine these further and create another great idea
-                        - Cheers to Maxim"</div>
-                      <div class="testimonial-item-author">
-                        <div class="media">
-                          <div class="align-self-center mr-3">
-                            <div class="avatar testimonial-avatar">
-                              <div class="inside" style="background-image: url(img/aaron.jpg);"></div>
-                            </div>
-                          </div>
-                          <div class="align-self-center media-body">
-                            <div class="testimonial-item-author-name">Vasil Ivanov</div>
-                            <div class="testimonial-item-author-status">CTO at 10minutes AG</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                      <div class="slide-descr testimonial-item-text">"... Maxim was somewhat new, however on
-                        interviewing him, it was immediately apparent that he really knew his stuff. So we took a
-                        chance. We struck gold. His input was insightful, his output was exemplary, he was available
-                        seemingly 24/7, and he handled our very complex UI requirements like a boss. Phenomenal across
-                        the board."</div>
-                      <div class="testimonial-item-author">
-                        <div class="media">
-                          <div class="align-self-center mr-3">
-                            <div class="avatar testimonial-avatar">
-                              <div class="inside" style="background-image: url(img/niko.jfif);"></div>
-                            </div>
-                          </div>
-                          <div class="align-self-center media-body">
-                            <div class="testimonial-item-author-name">Niko Sluzki</div>
-                            <div class="testimonial-item-author-status">CTO at Designosis</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-                  </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                  <div class="slide-photo slide-photo-testimonials">
-                    <div class="inside"><img src="img/slide7.png" alt="" /></div>
-                    <div class="image-card image-card-primary card7-1 animate-element delay11 fadeInLeft">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card7-1.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card7-2 animate-element delay8 fadeInLeft">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card7-2.png" alt="" /></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section pp-scrollable slide slide-clients slide-dark">
-          <div class="slide-container">
-            <div class="lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-5">
-                  <div class="animate-element delay5 fadeInUp">
-                    <div class="title-mini title-mini-margin-lg text-primary">my clients &amp; partners</div>
-                    <h3 class="slide-title font-custom">Clients and collaborators.</h3>
-                  </div>
-                  <div class="slide-descr animate-element delay7 fadeInUp">Over the past 7 years, I've been fortunate
-                    to work with and for people from some <strong>amazing organizations</strong>.</div>
-
-                  <div class="client-list animate-element delay9 fadeInUp">
-                    <div class="client-item">
-                      <div class="client-item-value">142</div>
-                      <div class="client-item-detail">
-                        <div class="client-item-title">total clients </div>
-                        <div class="client-item-descr">In over 12 countries</div>
-                      </div>
-                    </div>
-                    <div class="client-item">
-                      <div class="client-item-value">11</div>
-                      <div class="client-item-detail">
-                        <div class="client-item-title">trusted sponsors</div>
-                        <div class="client-item-descr">Featured by top ranked brand</div>
-                      </div>
-                    </div>
-                    <div class="client-item">
-                      <div class="client-item-value">95%</div>
-                      <div class="client-item-detail">
-                        <div class="client-item-title">sensitve feedback</div>
-                        <div class="client-item-descr">At project quality</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                  <div class="slide-photo slide-photo-clients">
-                    <div class="image-card card8-1 animate-element delay11 fadeInUp">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card8-1-dark.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card8-2 animate-element delay10 fadeInRight">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card8-2-dark.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card8-3 animate-element delay8 fadeInLeft">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card8-3-dark.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card8-4 animate-element delay9 fadeInUp">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card8-4-dark.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card8-5 animate-element delay13 fadeInUp">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card8-5-dark.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card8-6 animate-element delay12 fadeInLeft">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card8-6-dark.png" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="image-card card8-7 animate-element delay14 fadeInRight">
-                      <div class="image-card-body">
-                        <div class="inside"><img src="img/card8-7-dark.png" alt="" /></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section pp-scrollable slide slide-contacts a-slide-typed" data-name="contacts">
-          <div class="slide-container">
-            <div class="lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="contact-ornament"></div>
-            <div class="container">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                  <div class="animate-element delay5 fadeInUp">
-                    <div class="title-mini text-primary">contact me</div>
-                    <h1 class="slide-title font-custom">Are you ready to <span
-                        class="text-typed a-typed a-typed-contacts" data-text="work together?"></span></h1>
-                  </div>
-                  <div class="slide-descr animate-element delay7 fadeInUp">I’m always interested in hearing about new
-                    projects and opportunities.<br /> You can <strong>tell me about the problems</strong> you are trying
-                    to solve. I'd love to listen and see if there's anything I can do to help you.</div>
-                  <div class="slide-descr animate-element delay7 fadeInUp" id="success-message" style="color: #f79784; font-size: 20px; display: none;">
-                    Your submission has been completed successfully. I will touch you as soon as possible. Thanks.
-                  </div>
-                </div>
-              </div>
-              <div class="row align-items-center text-center contacts animate-element delay11 fadeInUp">
-                <div class="col-md-4">
-                  <!-- <div class="contact-item contact-item-phone"><a href="tel:+121553554427" class="phone-link">(+1) 215 5355 4427</a></div> -->
-                </div>
-                <div class="col-md-4">
-                  <div class="contact-item"><a href="mailto:mhuryanov@gmail.com"
-                      class="mail-link">mhuryanov@gmail.com</a></div>
-                </div>
-                <div class="col-md-4">
-                  <div class="contact-item" style="color: white;">Horodok, Ukraine</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <!-- /#page-outer -->
 
+    <!--=====  Vendors Scripts  ======-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script src="vendor/gmap3/gmap3.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/swiper/js/swiper.min.js"></script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/formstone/js/core.js"></script>
+    <script src="vendor/formstone/js/touch.js"></script>
+    <script src="vendor/formstone/js/transition.js"></script>
+    <script src="vendor/formstone/js/lightbox.js"></script>
+    <script src="vendor/formstone/js/background.js"></script>
+    <script src="vendor/jquery.appear/jquery.appear.js"></script>
+    <script src="vendor/countUp.js/js/countUp.min.js"></script>
+    <script src="vendor/mediaelement/mediaelement-and-player.min.js"></script>
+    <script src="vendor/smoothscroll/SmoothScroll.js"></script>
+    <script src="vendor/text-animation/js/index.js"></script>
 
-    <footer id="footer" class="footer">
-      <div class="container-fluid">
-        <div class="footer-social">
-          <ul class="social">
-            <li><a 
-              target="_blank" href="https://www.linkedin.com/in/maxim-huryanov-ba9499216/"><i class="icon-linkedin"></i></a></li>
-            <li><a 
-              target="_blank" href="https://www.behance.net/maximhn/"><i class="icon-behance"></i></a></li>
-            <li><a 
-              target="_blank" href="https://github.com/mhuryanov/"><i class="icon-github"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <!--=====  App Scripts  ======-->
+    <script src="assets/js/app.js"></script>
 
-
-    <div class="progress-nav">
-      <ul id="menu">
-        <li data-menuanchor="About" class="active"></li>
-        <li data-menuanchor="Services"></li>
-        <li data-menuanchor="Skills"></li>
-        <li data-menuanchor="Resume"></li>
-        <li data-menuanchor="Portfolio"></li>
-        <li data-menuanchor="Testimonials"></li>
-        <li data-menuanchor="Clients"></li>
-        <li data-menuanchor="Contact"></li>
-      </ul>
-    </div>
-
-
-  </div>
-
-
-  <div class="modal fade" id="request" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <form class="a-form" id="submit-form" novalidate="novalidate" type="get" action="?submission=true#Contact">
-            <div class="row">
-              <div class="form-group col-sm-6">
-                <input type="text" class="form-control" name="name" required="" placeholder="Name*"
-                  aria-required="true">
-              </div>
-              <div class="form-group col-sm-6">
-                <input type="email" class="form-control" required="" name="email" placeholder="Email*">
-              </div>
-              <div class="form-group col-sm-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject (Optinal)">
-              </div>
-              <div class="form-group col-sm-12">
-                <textarea name="message" class="form-control" required="" placeholder="Message*"></textarea>
-              </div>
-              <div class="form-group form-group-message col-sm-12">
-                <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>
-                <span id="error" class="text-primary">Sorry, something went wrong </span>
-              </div>
-              <div class="col-sm-12 text-center"><button type="submit" class="btn btn-dark">Contact me</button></div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.pagepiling.min.js"></script>
-  <script src="js/jquery.viewport.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/script.js"></script>
 
 </body>
 
