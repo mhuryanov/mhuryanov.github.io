@@ -5977,6 +5977,12 @@ form.search-form button.search-submit {
     transition: all 0.15s ease-in-out;
 }
 
+.masonry-grid>.grid-item>.content>.overlay-content>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .masonry-grid>.grid-item>.content>.overlay-content .info {
     color: #FFF;
     position: absolute;
